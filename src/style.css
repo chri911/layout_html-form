@@ -1,0 +1,16 @@
+input:not(:last-child),
+textarea {
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-bottom: 14px;
+}
+
+input[type="range"] {
+  margin-top: 12px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
