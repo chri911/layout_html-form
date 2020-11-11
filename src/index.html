@@ -9,84 +9,141 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off"
-    onsubmit="onSubmit()">
-      <fieldset>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      autocomplete="off"
+      onsubmit="onSubmit()"
+      method="post"
+    >
+      <fieldset class="infogroup">
         <legend>Personal information</legend>
         <label for="surname">
           Surname:
         </label>
-        <input type="text"
-        name="surname" id="surname">
+        <input
+          class="info"
+          type="text"
+          name="surname"
+          id="surname"
+        >
         <br>
         <label for="name">
           Name:
         </label>
-        <input type="text"
-        name="name" id="name">
+        <input
+          class="info"
+          type="text"
+          name="name"
+          id="name"
+        >
         <br>
         <label for="age">
           How old are You?
         </label>
-        <input type="number" value="12"
-        id="age" maxlength="2"
-        size="1" min="5"
-        max="120">
+        <input
+          class="info"
+          type="number"
+          value="12"
+          id="age"
+          maxlength="2"
+          size="1"
+          min="5"
+          max="120"
+        >
         <br>
         <label for="birth">
           Full date of birth:
         </label>
-        <input type="date" name="birth"
-        id="birth" placeholder="дд.мм.гггг">
+        <input
+          class="info"
+          type="date"
+          name="birth"
+          id="birth"
+          placeholder="дд.мм.гггг"
+        >
         <br>
         <label for="accept">
           I accept the term of the agreement
         </label>
-        <input type="checkbox" name="accept"
-        id="accept">
+        <input
+          class="info"
+          type="checkbox"
+          name="accept"
+          id="accept"
+        >
       </fieldset>
-      <fieldset>
+      <fieldset class="infogroup">
         <legend>Registration</legend>
         <label for="mail">
           E-mail:
         </label>
-        <input type="email" name="mail"
-        id="mail" placeholder="email@example.com"
-        required>
+        <input
+          class="info"
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="email@example.com"
+          required
+        >
         <br>
         <label for="pass">
           Password:
         </label>
-        <input type="password" minlength="8"
-        name="pass" id="pass">
+        <input
+          class="info"
+          type="password"
+          minlength="8"
+          name="pass"
+          id="pass"
+        >
       </fieldset>
-      <fieldset>
+      <fieldset class="infogroup">
         <legend>An interesting fact about you!</legend>
          Do you love cats?
-        <input type="radio"
-        name="cats" id="yes">
+        <input
+          class="info"
+          type="radio"
+          name="cats"
+          id="yes"
+        >
         <label for="yes">Yes</label>
-        <input type="radio"
-        name="cats" id="no">
+        <input
+          class="info"
+          type="radio"
+          name="cats"
+          id="no"
+        >
         <label for="no">No</label>
         <br>
         <label for="colour">
           What is your favorite color?
         </label>
-        <input type="color"
-        name="colour" id="colour">
+        <input
+          class="info"
+          type="color"
+          name="colour"
+          id="colour"
+        >
         <br>
         <label for="bed">
           What time do you go to bed?
         </label>
-        <input type="time" step="1"
-        name="bed" id="bed">
+        <input
+          class="info"
+          type="time"
+          step="1"
+          name="bed"
+          id="bed"
+        >
         <br>
         <label for="cars">
           What are your favorite brand of cars?
         </label>
-        <select name="cars"
-        id="cars" multiple>
+        <select
+        name="cars"
+        id="cars"
+        multiple
+        >
           <option value="bmw">BMW</option>
           <option value="audi">Audi</option>
           <option value="lada">Lada</option>
@@ -95,27 +152,43 @@
         <label for="rate">
           How do you rate our work?
         </label>
-        <input type="range" value="0"
-        name="rate" id="rate">
+        <input
+          class="info"
+          type="range"
+          value="0"
+          name="rate"
+          id="rate"
+        >
       </fieldset>
-      <fieldset>
+      <fieldset class="infogroup">
         <legend>Additional info</legend>
         <label for="comments">
           Comments:
         </label>
-        <textarea name="comments" id="comments"
-        cols="20" rows="2">
+        <textarea
+          name="comments"
+          id="comments"
+          cols="20"
+          rows="2"
+        >
         </textarea>
         <br>
         <label for="recommend">
           Would you recommend us?
         </label>
-        <select name="recommend" id="recommend">
+        <select
+          name="recommend"
+          id="recommend"
+        >
           <option value="yes">yes</option>
           <option value="no">no</option>
         </select>
       </fieldset>
-      <input type="submit" value="Submit">
+      <input
+        class="info"
+        type="submit"
+        value="Submit"
+       >
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>

@@ -1,16 +1,17 @@
-input:not(:last-child),
-textarea {
+.info:not(:last-child),
+#comments {
   margin-bottom: 10px;
 }
 
-input[type="radio"] {
+#yes,
+#no {
   margin-bottom: 14px;
 }
 
-input[type="range"] {
+#rate {
   margin-top: 12px;
 }
 
-fieldset {
+.infogroup {
   margin-bottom: 20px;
 }
